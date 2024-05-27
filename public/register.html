@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="/public/images/gato.gif" alt="gatito" width="140" height="140" >
+        <h2>Bienvenido</h2>
+        <p>Inicia sesión con tus credenciales y accede de tu dashboard de gestión</p>
+        <form id="formulario-login" action="/Iniciar_sesion" method="post">
+            <div>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>   
+                <input type="password" id="contraseña" name="contraseña" required>
+            </div>
+
+            <button type="submit">Iniciar Sesión</button>
+
+            <p>¿ya tienes cuenta? <a href="login.html" class="register">Inicia Sesion aquí</a></p>
+        </form>
+    </div>
+</body>
+</html>

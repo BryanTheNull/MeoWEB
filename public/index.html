@@ -1,0 +1,27 @@
+<div class="form-group">
+    <input type="password" id="contraseña" name="contraseña" required>
+    <i class="fas fa-eye-slash toggle-password" onclick="btnContraseña()"></i>
+</div>
+</div>
+<button type="submit">Iniciar Sesión</button>
+<p>¿No tienes cuenta? <a href="register.html" class="registrarse">Regístrate aquí</a></p>
+</form>
+</div>
+
+<!--Funcionalidad de icono ocultar/mostrar contraseña-->
+<script>
+function btnContraseña() {
+var contraseñaIngrasada = document.getElementById("contraseña");
+var Icon = document.querySelector(".toggle-password");
+
+if (contraseñaIngrasada.type === "password") {
+    contraseñaIngrasada.type = "text";
+    Icon.classList.remove("fa-eye-slash");
+    Icon.classList.add("fa-eye");
+} else {
+    contraseñaIngrasada.type = "password";
+    Icon.classList.remove("fa-eye");
+    Icon.classList.add("fa-eye-slash");
+}
+}
+</script>
